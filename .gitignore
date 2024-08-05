@@ -1,0 +1,26 @@
+# Ignore everything in the raw_files directory
+data/raw_files/*
+
+# Do not ignore .gitkeep
+!data/raw_files/.gitkeep
+
+# But do not ignore the directory itself
+!data/raw_files/
+
+#Ignore pycache
+data/__pycache__/
+preprocessing/__pycache__/
+utils/__pycache__/
+models/__pycache__/
+
+#Ignore everything in trained models and saved dataframes folders
+models/trained_models/*
+preprocessing/saved_dataframe/*
+
+# Do not ignore .gitkeep
+!models/trained_models/.gitkeep
+!preprocessing/saved_dataframe/.gitkeep
+
+# But do not ignore the directory itself
+!models/trained_models/
+!preprocessing/saved_dataframe/
